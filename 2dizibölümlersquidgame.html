@@ -663,8 +663,18 @@ footer .box i:hover {
               <i class="fas fa-circle"></i>
               <p>2021</p>
               <i class="fas fa-circle"></i>
-              <button>Action</button>
+              <button id="scrollButton">Tüm Bölümler</button>
             </div>
+
+            <script>
+              // JavaScript to scroll to the bottom when the button is clicked
+              function scrollToBottom() {
+                window.scrollTo(0, document.body.scrollHeight);
+              }
+            
+              // Adding click event listener to the button
+              document.getElementById('scrollButton').addEventListener('click', scrollToBottom);
+            </script>
 
             <p>Uzaylı bir bedende bir insan zihni olan Avatar, kendisini iki dünya arasında, kendisinin ve yerli halkın hayatta kalması için uğraştığı çaresiz bir mücadelede bulur.
             </p>
